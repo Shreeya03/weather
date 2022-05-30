@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+    height: 100vh;
+    
+}
+.main{
+    padding:20px 60px;
+    
+}
+.current{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: row;
+}
+.geninfo .time{
+    font-size: 100px;
+    font-weight: 100;
+}
+.time #ampm{
+    font-size: 50px;
+    margin-left: 20px;
+}
+#date{
+    font-size: 50px;
+}
+.place{
+    text-align: end;
+}
+.timezone{
+    font-size: 50px;
+}
+.country{
+    font-size: 20px;
+    font-weight: 500;
+}
+.weathers{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(40,40,40,0.5);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    border:1px solid white;
+}
+.weatheritem{
+    display: flex;
+    justify-content: space-between;
+}
+.future{
+    background-color: rgba(30,30,30,0.7);
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.forecast{
+    display: flex;
+    justify-content: center;
+}
+.today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding:10px;
+    margin: 10px 10px;
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+.day{
+    padding: 5px 15px;
+    background-color: rgb(79, 74, 74);
+    text-align: center;
+    border-radius: 50px;
+    
+}
+.today .temp{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.forecast-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding:10px;
+    
+}
+@media only screen and (max-width:730px) {
+    .future{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+        margin-left: -30px;
+        font-size: 20px;
+
+    }
+    .main{
+        padding: 20px;
+    }
+    .temp{
+        font-size: 20px;
+    }
+    #time{
+        font-size: 40px;
+    }
+    #time #ampm{
+        font-size: 20px;
+    }
+    #date{
+        font-size: 20px;
+    }
+    .weathers{
+        font-size: 15px;
+    }
+    #timezone{
+        font-size: 20px;
+    }
+
+}
